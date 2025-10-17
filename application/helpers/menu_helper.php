@@ -14,6 +14,15 @@ function app_init_admin_sidebar_menu_items()
         'badge'    => [],
     ]);
 
+    // TEST DEPLOYMENT PAGE
+    $CI->app_menu->add_sidebar_menu_item('test_deployment', [
+        'name'     => 'Test Deployment',
+        'href'     => admin_url('test_deployment'),
+        'position' => 2,
+        'icon'     => 'fa fa-rocket',
+        'badge'    => [],
+    ]);
+
     if (
         has_permission('customers', '', 'view')
         || (have_assigned_customers()
