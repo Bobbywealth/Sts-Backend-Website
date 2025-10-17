@@ -1,0 +1,8 @@
+/uploads
+/vendor
+/*.zip
+/temp
+/application/logs
+.env
+*.log
+
